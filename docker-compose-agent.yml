@@ -1,0 +1,26 @@
+version: "3"
+services:
+
+  teamcity-agent-1:
+    image: jetbrains/teamcity-agent
+    container_name: jetbrains_teamcity_agent_1
+    restart: always
+    privileged: true
+    volumes:
+      - ./agents/agent-1/conf:/data/teamcity_agent/conf
+
+  teamcity-agent-2:
+    image: jetbrains/teamcity-agent
+    container_name: jetbrains_teamcity_agent_2
+    restart: always
+    privileged: true
+    volumes:
+      - ./agents/agent-2/conf:/data/teamcity_agent/conf
+
+  teamcity-agent-3:
+    image: jetbrains/teamcity-agent
+    container_name: jetbrains_teamcity_agent_3
+    restart: always
+    privileged: true
+    volumes:
+      - ./agents/agent-3/conf:/data/teamcity_agent/conf

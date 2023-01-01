@@ -1,0 +1,10 @@
+/.idea
+
+# Agents
+/agents/agent-1
+/agents/agent-2
+/agents/agent-3
+
+# Artistudio
+docker-compose-artistudio.yml
+docker-compose-artistudio-agent.yml
